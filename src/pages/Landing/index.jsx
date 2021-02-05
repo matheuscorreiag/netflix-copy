@@ -13,7 +13,7 @@ import styles from "./styles";
 
 const Landing = () => {
   return (
-    <View style={styles.container}>
+    <ScrollView style={styles.container}>
       <View style={styles.bigFilm}>
         <StatusBar
           barStyle="light-content"
@@ -37,6 +37,10 @@ const Landing = () => {
             <Text style={styles.menu}> Filmes </Text>
             <Text style={styles.menu}> Minha Lista</Text>
           </View>
+          <LinearGradient
+            style={styles.gradient}
+            colors={["rgba(0,0,0,0.2)", "rgba(0,0,0,0.5)"]}
+          ></LinearGradient>
         </ImageBackground>
         <View style={styles.gradient}></View>
       </View>
@@ -66,18 +70,35 @@ const Landing = () => {
         </Text>
       </View>
       <View style={styles.scrollViewX}>
-        <ScrollView contentContainerStyle>
-          <View style={styles.preview}></View>
-          <View style={styles.preview}></View>
-          <View style={styles.preview}></View>
-          <View style={styles.preview}></View>
-          <View style={styles.preview}></View>
-          <View style={styles.preview}></View>
-          <View style={styles.preview}></View>
-          <View style={styles.preview}></View>
+        <ScrollView horizontal={true}>
+          <View>
+            <Image
+              style={styles.filmPreview}
+              source={require("../../assets/images/winx.png")}
+            ></Image>
+          </View>
+          <View>
+            <Image
+              style={styles.filmPreview}
+              source={require("../../assets/images/lupin.jpg")}
+            ></Image>
+          </View>
+          <View>
+            <Image
+              style={styles.filmPreview}
+              source={require("../../assets/images/ozark.jpg")}
+            ></Image>
+          </View>
+          <View>
+            <Image
+              style={styles.filmPreview}
+              source={require("../../assets/images/creed.jpg")}
+            ></Image>
+          </View>
         </ScrollView>
       </View>
-    </View>
+      
+    </ScrollView>
   );
 };
 

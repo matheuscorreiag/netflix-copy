@@ -3,13 +3,11 @@ import { StyleSheet } from "react-native";
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    width: "100%",
-    height: "100%",
-    backgroundColor: "black",
+    backgroundColor: "#000",
   },
   bigFilm: {
     width: "100%",
-    height: "70%",
+    height: 500,
   },
   bigFilmImage: {
     width: "100%",
@@ -76,11 +74,26 @@ const styles = StyleSheet.create({
     width: "100%",
     paddingLeft: 10,
   },
-  preview: {
-    backgroundColor: "white",
-    borderRadius: 100,
+  filmPreview: {
     width: 100,
     height: 100,
+    borderRadius: 100,
+  },
+  lineTest: {
+    backgroundColor: "red",
+    width: "100%",
+  },
+  filmPreviewTest: {
+    width: 100,
+    height: 100,
+    borderRadius: 100,
+  },
+  gradient: {
+    width: "100%",
+    height: 150,
+    position: "absolute",
+    zIndex: 9,
+    bottom: 0,
   },
 });
 
