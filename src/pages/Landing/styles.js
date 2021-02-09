@@ -3,7 +3,7 @@ import { StyleSheet } from "react-native";
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#000",
+    backgroundColor: "red",
   },
   bigFilm: {
     width: "100%",
@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
   },
   bigFilmButtonsContainer: {
     width: "100%",
-    height: "10%",
+    height: "7%",
     backgroundColor: "black",
     flexDirection: "row",
     justifyContent: "center",
@@ -67,33 +67,47 @@ const styles = StyleSheet.create({
     paddingLeft: 20,
     width: "100%",
     height: "5%",
+    backgroundColor: "#000",
   },
   scrollViewX: {
-    backgroundColor: "black",
-    height: "20%",
+    backgroundColor: "#000",
+    height: "10%",
     width: "100%",
-    paddingLeft: 10,
+    paddingLeft: 20,
   },
   filmPreview: {
     width: 100,
     height: 100,
     borderRadius: 100,
   },
-  lineTest: {
-    backgroundColor: "red",
-    width: "100%",
-  },
-  filmPreviewTest: {
-    width: 100,
-    height: 100,
-    borderRadius: 100,
-  },
-  gradient: {
+  gradientBottom: {
     width: "100%",
     height: 150,
     position: "absolute",
     zIndex: 9,
     bottom: 0,
+  },
+  continueFilmContainer: {
+    width: "100%",
+    height: 400,
+    backgroundColor: "#000",
+  },
+  continueFilmCard: {
+    backgroundColor: "#000",
+    height: 200,
+    width: 130,
+    paddingRight: 10,
+  },
+  continueFilmImage: {
+    width: "100%",
+    height: "100%",
+    resizeMode: "contain",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  continueFilmGradient: {
+    width: "100%",
+    height: "100%",
   },
 });
 

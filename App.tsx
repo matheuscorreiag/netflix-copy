@@ -12,6 +12,7 @@ import {
 } from "@expo-google-fonts/poppins";
 
 import Landing from "./src/pages/Landing";
+import { StatusBar } from "expo-status-bar";
 
 export default function App() {
   let [fontsLoaded] = useFonts({
@@ -25,6 +26,7 @@ export default function App() {
   }
   return (
     <>
+      <StatusBar />
       <Landing />
     </>
   );

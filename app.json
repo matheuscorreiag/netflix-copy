@@ -4,9 +4,9 @@
     "slug": "copyflix",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./src/assets/images/netflixlogo@1.png",
     "splash": {
-      "image": "./src/assets/images/netflixlogo.png",
+      "image": "./src/assets/images/netflixlogo@1.png",
       "resizeMode": "contain",
       "backgroundColor": "#000"
     },
@@ -19,12 +19,12 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./src/assets/images/netflixlogo@1.png",
         "backgroundColor": "#000"
       }
     },
     "web": {
-      "favicon": "./src/assets/images/netflixlogo.png"
+      "favicon": "./src/assets/images/netflixlogo@1.png"
     }
   }
 }

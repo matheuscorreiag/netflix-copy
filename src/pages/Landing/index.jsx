@@ -1,25 +1,17 @@
 import React from "react";
-import {
-  View,
-  Text,
-  Image,
-  ImageBackground,
-  StatusBar,
-  ScrollView,
-} from "react-native";
+import { View, Text, Image, ImageBackground, ScrollView } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import { Ionicons, Foundation } from "@expo/vector-icons";
+
 import styles from "./styles";
+
+import ContinueFilmButtons from "../../components/ContinueFilmButtons";
+import PlayButton from "../../components/PlayButton";
 
 const Landing = () => {
   return (
     <ScrollView style={styles.container}>
       <View style={styles.bigFilm}>
-        <StatusBar
-          barStyle="light-content"
-          hidden={true}
-          backgroundColor="white"
-        />
         <ImageBackground
           style={styles.bigFilmImage}
           source={require("../../assets/images/cartaz.jpg")}
@@ -38,7 +30,7 @@ const Landing = () => {
             <Text style={styles.menu}> Minha Lista</Text>
           </View>
           <LinearGradient
-            style={styles.gradient}
+            style={styles.gradientBottom}
             colors={["rgba(0,0,0,0.2)", "rgba(0,0,0,0.5)"]}
           ></LinearGradient>
         </ImageBackground>
@@ -95,9 +87,78 @@ const Landing = () => {
               source={require("../../assets/images/creed.jpg")}
             ></Image>
           </View>
+          <View>
+            <Image
+              style={styles.filmPreview}
+              source={require("../../assets/images/creed.jpg")}
+            ></Image>
+          </View>
         </ScrollView>
       </View>
-      
+
+      <View style={styles.continueFilmContainer}>
+        <Text
+          style={{
+            color: "white",
+            fontSize: 24,
+            fontWeight: "bold",
+            paddingLeft: 20,
+          }}
+        >
+          Continuar assistindo como MATHEUS
+        </Text>
+
+        <ScrollView horizontal style={styles.scrollViewX}>
+          <View style={styles.continueFilmCard}>
+            <View>
+              <ImageBackground
+                style={styles.continueFilmImage}
+                source={require("../../assets/images/riverdale.jpg")}
+              >
+                <PlayButton />
+              </ImageBackground>
+            </View>
+
+            <ContinueFilmButtons />
+          </View>
+          <View style={styles.continueFilmCard}>
+            <View>
+              <ImageBackground
+                style={styles.continueFilmImage}
+                source={require("../../assets/images/resurrection.jpg")}
+              >
+                <PlayButton />
+              </ImageBackground>
+            </View>
+
+            <ContinueFilmButtons />
+          </View>
+          <View style={styles.continueFilmCard}>
+            <View>
+              <ImageBackground
+                style={styles.continueFilmImage}
+                source={require("../../assets/images/bridgerton.jpg")}
+              >
+                <PlayButton />
+              </ImageBackground>
+            </View>
+
+            <ContinueFilmButtons />
+          </View>
+          <View style={styles.continueFilmCard}>
+            <View>
+              <ImageBackground
+                style={styles.continueFilmImage}
+                source={require("../../assets/images/peakyblinders.jpg")}
+              >
+                <PlayButton />
+              </ImageBackground>
+            </View>
+
+            <ContinueFilmButtons />
+          </View>
+        </ScrollView>
+      </View>
     </ScrollView>
   );
 };
