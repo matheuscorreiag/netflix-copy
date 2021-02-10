@@ -3,7 +3,7 @@ import { StyleSheet } from "react-native";
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "green",
+    backgroundColor: "#000",
   },
   bigFilm: {
     width: "100%",
@@ -38,15 +38,15 @@ const styles = StyleSheet.create({
   },
   bigFilmButtonsContainer: {
     width: "100%",
-    height: "7%",
-    backgroundColor: "black",
+    height: 70,
+    backgroundColor: "#000",
     flexDirection: "row",
     justifyContent: "center",
   },
   bigFilmButtons: {
     width: 125,
     height: 60,
-    backgroundColor: "black",
+    backgroundColor: "#000",
     alignItems: "center",
     justifyContent: "center",
   },
@@ -66,8 +66,8 @@ const styles = StyleSheet.create({
   line: {
     paddingLeft: 20,
     width: "100%",
-    height: "5%",
     backgroundColor: "#000",
+    paddingBottom: 10,
   },
   scrollViewX: {
     backgroundColor: "#000",
@@ -83,7 +83,7 @@ const styles = StyleSheet.create({
   },
   continueFilmContainer: {
     width: "100%",
-    height: 270,
+    height: 300,
     backgroundColor: "#000",
     paddingBottom: 10,
   },
@@ -96,6 +96,11 @@ const styles = StyleSheet.create({
   continueFilmGradient: {
     width: "100%",
     height: "100%",
+  },
+  midTitles: {
+    color: "white",
+    fontSize: 24,
+    fontWeight: "bold",
   },
 });
 

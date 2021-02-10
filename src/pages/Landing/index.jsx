@@ -56,9 +56,7 @@ const Landing = () => {
         </View>
       </View>
       <View style={styles.line}>
-        <Text style={{ color: "white", fontSize: 24, fontWeight: "bold" }}>
-          Prévias
-        </Text>
+        <Text style={styles.midTitles}>Prévias</Text>
       </View>
       <View style={styles.scrollViewX}>
         <ScrollView horizontal={true}>
@@ -67,25 +65,18 @@ const Landing = () => {
       </View>
 
       <View style={styles.continueFilmContainer}>
-        <Text
-          style={{
-            color: "white",
-            fontSize: 24,
-            fontWeight: "bold",
-            paddingLeft: 20,
-            paddingBottom: 10,
-          }}
-        >
-          Continuar assistindo como MATHEUS
-        </Text>
-
+        <View style={styles.line}>
+          <Text style={styles.midTitles}>
+            Continuar assistindo como MATHEUS
+          </Text>
+        </View>
         <ScrollView horizontal style={styles.scrollViewX}>
           <ContinueFilm />
         </ScrollView>
       </View>
 
-      <View style={(styles.line, { backgroundColor: "red" })}>
-        <Text style={{ color: "#FFF" }}> Minha Lista</Text>
+      <View style={styles.line}>
+        <Text style={styles.midTitles}> Minha Lista</Text>
       </View>
     </ScrollView>
   );
