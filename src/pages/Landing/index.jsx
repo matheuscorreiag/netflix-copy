@@ -4,9 +4,8 @@ import { LinearGradient } from "expo-linear-gradient";
 import { Ionicons, Foundation } from "@expo/vector-icons";
 
 import styles from "./styles";
-
-import ContinueFilmButtons from "../../components/ContinueFilmButtons";
-import PlayButton from "../../components/PlayButton";
+import ContinueFilm from "../../components/ContinueFilm";
+import PreviewFilm from "../../components/PreviewFilm";
 
 const Landing = () => {
   return (
@@ -63,36 +62,7 @@ const Landing = () => {
       </View>
       <View style={styles.scrollViewX}>
         <ScrollView horizontal={true}>
-          <View>
-            <Image
-              style={styles.filmPreview}
-              source={require("../../assets/images/winx.png")}
-            ></Image>
-          </View>
-          <View>
-            <Image
-              style={styles.filmPreview}
-              source={require("../../assets/images/lupin.jpg")}
-            ></Image>
-          </View>
-          <View>
-            <Image
-              style={styles.filmPreview}
-              source={require("../../assets/images/ozark.jpg")}
-            ></Image>
-          </View>
-          <View>
-            <Image
-              style={styles.filmPreview}
-              source={require("../../assets/images/creed.jpg")}
-            ></Image>
-          </View>
-          <View>
-            <Image
-              style={styles.filmPreview}
-              source={require("../../assets/images/creed.jpg")}
-            ></Image>
-          </View>
+          <PreviewFilm />
         </ScrollView>
       </View>
 
@@ -103,61 +73,19 @@ const Landing = () => {
             fontSize: 24,
             fontWeight: "bold",
             paddingLeft: 20,
+            paddingBottom: 10,
           }}
         >
           Continuar assistindo como MATHEUS
         </Text>
 
         <ScrollView horizontal style={styles.scrollViewX}>
-          <View style={styles.continueFilmCard}>
-            <View>
-              <ImageBackground
-                style={styles.continueFilmImage}
-                source={require("../../assets/images/riverdale.jpg")}
-              >
-                <PlayButton />
-              </ImageBackground>
-            </View>
-
-            <ContinueFilmButtons />
-          </View>
-          <View style={styles.continueFilmCard}>
-            <View>
-              <ImageBackground
-                style={styles.continueFilmImage}
-                source={require("../../assets/images/resurrection.jpg")}
-              >
-                <PlayButton />
-              </ImageBackground>
-            </View>
-
-            <ContinueFilmButtons />
-          </View>
-          <View style={styles.continueFilmCard}>
-            <View>
-              <ImageBackground
-                style={styles.continueFilmImage}
-                source={require("../../assets/images/bridgerton.jpg")}
-              >
-                <PlayButton />
-              </ImageBackground>
-            </View>
-
-            <ContinueFilmButtons />
-          </View>
-          <View style={styles.continueFilmCard}>
-            <View>
-              <ImageBackground
-                style={styles.continueFilmImage}
-                source={require("../../assets/images/peakyblinders.jpg")}
-              >
-                <PlayButton />
-              </ImageBackground>
-            </View>
-
-            <ContinueFilmButtons />
-          </View>
+          <ContinueFilm />
         </ScrollView>
+      </View>
+
+      <View style={(styles.line, { backgroundColor: "red" })}>
+        <Text style={{ color: "#FFF" }}> Minha Lista</Text>
       </View>
     </ScrollView>
   );

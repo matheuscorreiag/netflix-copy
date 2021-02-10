@@ -3,7 +3,7 @@ import { StyleSheet } from "react-native";
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "red",
+    backgroundColor: "green",
   },
   bigFilm: {
     width: "100%",
@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
   menuBackground: {
     flexDirection: "row",
     justifyContent: "space-around",
-    paddingTop: 2,
+    paddingTop: 50,
     paddingLeft: 10,
   },
   background: {
@@ -71,14 +71,8 @@ const styles = StyleSheet.create({
   },
   scrollViewX: {
     backgroundColor: "#000",
-    height: "10%",
     width: "100%",
     paddingLeft: 20,
-  },
-  filmPreview: {
-    width: 100,
-    height: 100,
-    borderRadius: 100,
   },
   gradientBottom: {
     width: "100%",
@@ -89,19 +83,13 @@ const styles = StyleSheet.create({
   },
   continueFilmContainer: {
     width: "100%",
-    height: 400,
+    height: 270,
     backgroundColor: "#000",
-  },
-  continueFilmCard: {
-    backgroundColor: "#000",
-    height: 200,
-    width: 130,
-    paddingRight: 10,
+    paddingBottom: 10,
   },
   continueFilmImage: {
     width: "100%",
-    height: "100%",
-    resizeMode: "contain",
+    height: 160,
     alignItems: "center",
     justifyContent: "center",
   },
