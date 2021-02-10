@@ -102,6 +102,25 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: "bold",
   },
+  menuBottomContainer: {
+    backgroundColor: "#191a1c",
+    width: "100%",
+    height: 60,
+    alignItems: "center",
+    justifyContent: "space-evenly",
+    flexDirection: "row",
+  },
+  menuBottomImageTextContainer: {
+    alignItems: "center",
+  },
+  menuBottomTextActive: {
+    color: "#FFFF",
+    fontSize: 12,
+  },
+  menuBottomTextInactive: {
+    color: "#757575",
+    fontSize: 12,
+  },
 });
 
 export default styles;
