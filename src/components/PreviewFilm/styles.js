@@ -9,7 +9,6 @@ const styles = StyleSheet.create({
     height: 100,
     borderRadius: 100,
     borderColor: "#e0dfc8",
-    borderStyle: "solid",
     borderWidth: 2,
   },
 });
